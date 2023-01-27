@@ -1,5 +1,7 @@
 # Visual Studio Code
 
+> Now VSCode user settings can be synced with GitHub account.
+
 ## User Settings
 
 Copy `settings.json` into the `User` directory which location depends on the OS platform.
