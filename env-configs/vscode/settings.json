@@ -1,0 +1,12 @@
+{
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.colorTheme": "One Dark Pro",
+    "editor.renderWhitespace": "none",
+    "editor.rulers": [80,120],
+    "editor.wordWrap": "on",
+    "terminal.integrated.fontFamily": "Meslo LG M for Powerline",
+    "todo-tree.tree.showScanModeButton": false,
+    "workbench.colorCustomizations": {
+        "[Material Theme]": {}
+    }
+}
