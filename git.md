@@ -179,6 +179,10 @@ log1 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C
 log2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''%C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
 ```
 
+## Branching Model
+
+master - hotfixes - releases - develop - features
+
 ## Reference
 
 [https://git-scm.com/docs](https://git-scm.com/docs)
@@ -190,3 +194,5 @@ log2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C
 [Xuefeng Liao's Git Tutorial](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
 
 [Atlassian Git Cheatsheet](https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet)
+
+[Git Branching Model](https://nvie.com/posts/a-successful-git-branching-model/)
