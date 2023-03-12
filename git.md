@@ -181,7 +181,7 @@ log2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C
 
 ## Branching Model
 
-master - hotfixes - releases - develop - features
+master (production) - hotfixes - releases - develop - features
 
 ## Reference
 
