@@ -16,6 +16,7 @@ $ docker build -f Dockerfile -t repo_name:tag_name /path
 #    -t   : allocate a pseudo-tty
 #    -d   : start in detached mode
 #    -p   : bind container port to host machine port
+#           localhost IP 127.0.0.1 is default for host_port if not specified
 $ docker run --rm -itd -v /host/path/to/map:/container/path -p host_port:container_port docker_img
 
 # Show containers
@@ -28,6 +29,11 @@ $ docker attach docker_container
 
 # Detach from a container:
 #    Press Ctrl+P, followed by Ctrl+Q
+
+# Show logs from a container
+$ docker logs container_id_or_name
+# Continuously show logs
+$ docker logs container_id_or_name -f
 
 # Stop a container
 $ docker stop container_id_or_name
