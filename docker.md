@@ -7,20 +7,41 @@
 $ docker info
 
 # Build an image with a tag
-$ docker build -f Dockerfile -t repo_name:tag_name .
+#   /path : specify the path to the context, where it searches the Dockerfile
+$ docker build -f Dockerfile -t repo_name:tag_name /path
 
-# Run a container with an image by ID or Repo:Tag
+# Run a container with a docker_img by ID or Repo:Tag
 #    --rm : container to be removed when exiting or when the daemon exits
 #    -i   : keep STDIN open even if not attached
 #    -t   : allocate a pseudo-tty
 #    -d   : start in detached mode
-$ docker run --rm -itd -v /host/path/to/map:/container/path docker_img
+#    -p   : bind container port to host machine port
+$ docker run --rm -itd -v /host/path/to/map:/container/path -p host_port:container_port docker_img
+
+# Show containers
+$ docker ps
+# Or,
+$ docker container ls
 
 # Attach to a running container by ID or Name
 $ docker attach docker_container
 
 # Detach from a container:
 #    Press Ctrl+P, followed by Ctrl+Q
+
+# Stop a container
+$ docker stop container_id_or_name
+```
+
+## Official Images
+
+In the Docker Hub, there are tons of officially built images that can be used directly. For example, to use [Ubuntu Lunar release](https://hub.docker.com/_/ubuntu/tags), search for `ubuntu` as the **repository**, go to the **tag** page and find the release `lunar-20230314`. 
+
+We can specify the `FROM repo:tag` in the `Dokcerfile` so the build stage will pull that image.
+
+```sh
+$ cat Dockerfile
+FROM ubuntu:lunar-20230314
 ```
 
 ## References
