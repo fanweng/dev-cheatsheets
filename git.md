@@ -168,6 +168,13 @@ $ git stash clear
 $ git stash drop stash@{2}
 ```
 
+## Git Model
+
+Git commands from Patrick Zahnd.
+
+![Git Commands](resources/git-workflow.png)
+
+
 ## Useful Configs
 
 1. Graphical view of branches
