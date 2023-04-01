@@ -5,7 +5,7 @@
 ### Clone A Repository
 
 ```sh
-$ git clone <repository_url>`
+$ git clone <repository_url>
 ```
 
 ### Create New Repository Procedure
@@ -89,6 +89,7 @@ $ git remote show origin
 ### Work Collaboration Procedure
 
 ```sh
+# push current local branch to remote
 $ git push origin <branch_name>
 $ git pull
 $ git branch --set-upstream <branch_name> <origin/branch_name>

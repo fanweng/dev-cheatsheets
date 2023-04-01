@@ -37,6 +37,10 @@ $ docker logs container_id_or_name -f
 
 # Stop a container
 $ docker stop container_id_or_name
+
+# Run command outside the docker environment
+# Really useful if the prompt isn't available in the docker environment
+$ docker exec -d container_id_or_name your_cmd
 ```
 
 ## Official Images
