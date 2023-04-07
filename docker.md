@@ -17,7 +17,8 @@ $ docker build -f Dockerfile -t repo_name:tag_name /path
 #    -d   : start in detached mode
 #    -p   : bind container port to host machine port
 #           localhost IP 127.0.0.1 is default for host_port if not specified
-$ docker run --rm -itd -v /host/path/to/map:/container/path -p host_port:container_port docker_img
+#  --name : give the container a customized name
+$ docker run --rm -itd -v /host/path/to/map:/container/path -p host_port:container_port --name given_container_name docker_img
 
 # Show containers
 $ docker ps
