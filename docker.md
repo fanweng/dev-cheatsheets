@@ -20,10 +20,13 @@ $ docker build -f Dockerfile -t repo_name:tag_name /path
 #  --name : give the container a customized name
 $ docker run --rm -itd -v /host/path/to/map:/container/path -p host_port:container_port --name given_container_name docker_img
 
-# Show containers
+# Show running containers
 $ docker ps
 # Or,
 $ docker container ls
+# To view stopped but yet removed containers
+$ docker ps -a
+
 
 # Attach to a running container by ID or Name
 $ docker attach docker_container
