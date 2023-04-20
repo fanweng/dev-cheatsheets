@@ -92,7 +92,7 @@ $ git remote show origin
 # push current local branch to remote
 $ git push origin <branch_name>
 $ git pull
-$ git branch --set-upstream <branch_name> <origin/branch_name>
+$ git branch --set-upstream-to=<origin/branch_name> <branch_name> 
 ```
 
 ### Tag
