@@ -6,6 +6,8 @@ Copy the `.vimrc` into the `$HOME` directory and restart `vim` application.
 
 ## Cheat Sheet
 
++ Copy the current line - `yy`
++ Undo - `u`, Redo - `Ctrl+r`
 + Select lines
   + `V` -> `number` -> `j/k`, e.g. `V4j`
 + Jump back to previous edit location
@@ -27,8 +29,8 @@ Copy the `.vimrc` into the `$HOME` directory and restart `vim` application.
 + Tab controls
   + `gt` cycle through tabs
   + `gT` reversely cycle through tabs
-  + `N gt` go to Nth tab, e.g. `1gt` go to first tab
-
+  + `N gt` go to Nth tab, e.g. `1gt` go to first tab 
+  
 ![Vim keybindings](../../resources/vim-keybindings.jpg)
 
 [Vim Cheat Sheet](https://vim.rtorr.com/)
